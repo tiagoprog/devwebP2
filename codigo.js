@@ -32,7 +32,7 @@ const pega_json = async (caminho) => {
   
       const linkDetalhes = document.createElement("a");
       linkDetalhes.href = `detalhes.html?id=${jogador.id}`;
-      linkDetalhes.innerHTML = "Saiba Mais";
+      linkDetalhes.innerHTML = "Detalhes";
       jogadorDiv.appendChild(linkDetalhes);
   
       container.appendChild(jogadorDiv);
@@ -99,7 +99,7 @@ const pega_json = async (caminho) => {
     const barraPesquisa = document.createElement('input');
     barraPesquisa.type = 'text';
     barraPesquisa.classList.add('barra-pesquisa');
-    barraPesquisa.placeholder = 'Pesquise atletas...';
+    barraPesquisa.placeholder = 'Busque por nome';
     barraPesquisa.oninput = (e) => filtrarAtletas(e.target.value);
   
     document.body.appendChild(barraPesquisa);

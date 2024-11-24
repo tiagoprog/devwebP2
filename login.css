@@ -126,3 +126,150 @@
   padding: 1em;
   display: flex;
 }
+#atletas-body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: white; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+.header {
+  width: 100%;
+  background-color: black; 
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.botao-sair {
+  background-color: black; 
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.botao-sair:hover {
+  background-color: black; 
+}
+
+.barra-pesquisa {
+  width: 80%;
+  max-width: 1000px;
+  padding: 0.7em;
+  margin: 1em 0;
+  border: 1px solid black; 
+  border-radius: 5px;
+  font-size: 1.2em;
+  background-color: white; 
+  color: black; 
+}
+
+.botoes-filtragem {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2em;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.botao-filtragem {
+  background-color: black; 
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  padding: 0.7em 2em;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-filtragem:hover {
+  background-color: black; 
+  transform: scale(1.05);
+}
+
+#atletas-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 2em;
+  width: 100%; 
+  max-width: 2000px;
+  margin: 2em auto;
+}
+
+@media (max-width: 1300px) {
+  .atletas-container {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (max-width: 1024px) {
+  .atletas-container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 768px) {
+  .atletas-container {
+    grid-template-columns: 1fr; 
+  }
+}
+
+.player {
+  background-color: black; 
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.player img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.player h2 {
+  font-size: 1.6em;
+  margin-top: 10px;
+  color: white; 
+}
+
+.player p {
+  font-size: 1em;
+  color: rgb(255, 252, 252); 
+  margin-top: 10px;
+}
+
+#detalhes {
+  width: 100%;
+  padding: 2em;
+  background-color: white; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
