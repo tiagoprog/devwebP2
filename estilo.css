@@ -1,0 +1,36 @@
+p {
+  font-size: 32px;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 1px;
+  margin-right: 600px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .pagina {
+      padding: 10px;
+  }
+
+  .foto img {
+      width: 150px;
+      height: 150px;
+  }
+
+  h1 {
+      font-size: 28px;
+  }
+
+  h3 {
+      font-size: 16px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+
+  a {
+      padding: 8px 16px;
+  }
+}

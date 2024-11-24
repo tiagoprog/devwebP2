@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap');
+
+:root {
+  --branco: #ffffff;
+  --cinza-claro: #f0f0f0;
+  --cinza-escuro: #333333;
+  --preto: #000000;
+}
+
+#login-body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, var(--cinza-claro), var(--cinza-escuro));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--cinza-escuro);
+}
+
+#login-body #container-entrada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--branco);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  max-width: 900px;
+  width: 100%;
+}
+
+#login-body .imagem-div img {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-right: 2em;
+}
+
+#login-body .login-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#login-body .titulo {
+  margin: 0 0 1em 0;
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--cinza-escuro);
+  text-align: left;
+}
+
+#login-body .texto {
+  font-size: 0.9em;
+  margin-bottom: 1.5em;
+  color: var(--cinza-escuro);
+  line-height: 1.5;
+}
+
+#login-body .input-senha {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1.5em;
+  border: 1px solid var(--cinza-claro);
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: var(--cinza-claro);
+}
+
+#login-body .input-senha:focus {
+  border-color: var(--cinza-escuro);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#login-body .senha-correta-display {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  color: var(--cinza-escuro);
+}
+
+#login-body .botao-login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, var(--cinza-escuro), var(--cinza-claro));
+  color: var(--branco);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#login-body .botao-login:hover {
+  background: linear-gradient(135deg, var(--cinza-claro), var(--cinza-escuro));
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+#login-body .botao-login:active {
+  background: linear-gradient(135deg, var(--cinza-escuro), var(--cinza-claro));
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  transform: translateY(1px);
+}
+
+#atletas-body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: var(--cinza-claro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+.header {
+  width: 100%;
+  background-color: var(--cinza-escuro);
+  padding: 1em;
+  display: flex;
+}
